@@ -1,0 +1,49 @@
+<div class="page-header">
+    <h2 class="page-title">Таблица пользователей</h2>
+    <div class="table-search">
+        <input matInput placeholder="Поиск пользователей" [formControl]="userFormControl">
+    </div>
+</div>
+<div class="user-table">
+    <div class="header-box">
+        <div ngClass="header-item"
+             *ngFor="let headerCell of tableSettings"
+             [class]="headerCell.className"
+             [ngStyle]="{'width': headerCell.width }">
+            {{headerCell.label}}
+        </div>
+        <div class="header-item buttons">
+            <span class="btn-create"
+                  (click)="createUser()">
+                Создать юзера
+            </span>
+        </div>
+    </div>
+
+    <div class="user-item"
+         *ngFor="let user of users"
+         [class.selected]="user === selectedUser"
+         (click)="onSelect(user)">
+        <div class="user-id"
+            [ngStyle]="{ width: getTableSettingsWidth('id') }">
+            {{ user.id }}
+        </div>
+        <div [ngStyle]="{ 'width': getTableSettingsWidth('name') }">
+            {{ user.name }}
+        </div>
+        <div [ngStyle]="{ 'width': getTableSettingsWidth('login') }">
+            {{ user.login }}
+        </div>
+        <div [ngStyle]="{ 'width': getTableSettingsWidth('email') }">
+            {{ user.email }}
+        </div>
+        <div [ngStyle]="{ 'width': getTableSettingsWidth('roleName') }">
+            {{ user.roleName }}
+        </div>
+        <div class="functional-buttons">
+            <span class="btn-delete" (click)="deleteUser(user)">
+                Удалить
+            </span>
+        </div>
+    </div>
+</div>

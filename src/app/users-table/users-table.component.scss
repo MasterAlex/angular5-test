@@ -1,0 +1,94 @@
+.page-header {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  justify-content: space-between;
+
+  .table-search {
+    width: 20%;
+
+    input {
+      min-height: 28px;
+      width: 100%;
+      padding-left: 5px;
+      border-radius: 3px;
+      border: 1px solid #dedede;
+    }
+  }
+}
+
+.user-table {
+  width: 100%;
+  .header-box {
+    display: flex;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .header-item {
+      padding: 10px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      vertical-align: top;
+      border-bottom: 1px solid #cccccc;
+
+      &.buttons {
+        width: 10%;
+        text-align: right;
+
+        .btn-create {
+          display: inline-block;
+          padding: 3px 5px;
+          border-radius: 3px;
+          text-align: center;
+          background: #75DD7D;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .user-item {
+    display: flex;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    &.selected {
+      > div:not(.functional-buttons) {
+        background-color: #cccccc;
+        cursor: default;
+      }
+    }
+
+    > div {
+      padding: 10px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      vertical-align: top;
+      cursor: pointer;
+
+      &.functional-buttons {
+        width: 10%;
+        cursor: default;
+        text-align: right;
+
+        .btn-delete {
+          display: inline-block;
+          padding: 3px 10px;
+          border-radius: 3px;
+          text-align: center;
+          background: #ccc;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

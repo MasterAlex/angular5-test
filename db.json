@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Иванов Иван Иванович",
+      "login": "ivanovii",
+      "email": "ivanov@test.test",
+      "roleName": "Администратор"
+    },
+    {
+      "id": 2,
+      "name": "Петров Петр Петрович",
+      "login": "petrovpp",
+      "email": "pretov@test.test",
+      "roleName": "Пользователь"
+    },
+    {
+      "id": 3,
+      "name": "Сидоров Сидор Сидорович",
+      "login": "sidorovss",
+      "email": "sidorov@test.test",
+      "roleName": "Гость"
+    },
+    {
+      "id": 4,
+      "name": "Рональду Рональд Рональдович",
+      "login": "ronaldocr",
+      "email": "ronaldo@cr.com",
+      "roleName": "Пользователь"
+    },
+    {
+      "id": 5,
+      "name": "Месси Леонид Феофанович",
+      "login": "messiii",
+      "email": "messi@mail.com",
+      "roleName": "Гость"
+    },
+    {
+      "id": 6,
+      "name": "Березуцкий Василий Иванович",
+      "login": "beresavi",
+      "email": "vasya@cska.ru",
+      "roleName": "Администратор"
+    }
+  ],
+  "tableSettings": [
+    {
+      "key": "id",
+      "label": "ID",
+      "width": "10%",
+      "className": "id"
+    },
+    {
+      "key": "name",
+      "label": "Имя",
+      "width": "20%",
+      "className": ""
+    },
+    {
+      "key": "login",
+      "label": "Логин",
+      "width": "20%",
+      "className": ""
+    },
+    {
+      "key": "email",
+      "label": "Email",
+      "width": "20%",
+      "className": ""
+    },
+    {
+      "key": "roleName",
+      "label": "Роль",
+      "width": "20%",
+      "className": ""
+    }
+  ]
+}
