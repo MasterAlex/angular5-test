@@ -41,6 +41,20 @@
       "login": "beresavi",
       "email": "vasya@cska.ru",
       "roleName": "Администратор"
+    },
+    {
+      "name": "New User",
+      "login": "new_user",
+      "email": "new_user@test.test",
+      "roleName": "Пользователь",
+      "id": 7
+    },
+    {
+      "name": "New User",
+      "login": "new_user",
+      "email": "new_user@test.test",
+      "roleName": "Пользователь",
+      "id": 8
     }
   ],
   "tableSettings": [

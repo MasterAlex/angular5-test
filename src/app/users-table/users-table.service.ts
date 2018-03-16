@@ -50,16 +50,4 @@ export class UsersTableService {
             })
             .catch(error => this.handleError(error));
     }
-
-    hasUser(user: User): boolean {
-        return this.indexOf(user) !== -1;
-    }
-
-    indexOf(user: User): number {
-        for(let i = 0; i < this.users.length; i++) {
-            if(this.users[i].id === user.id) {
-                return i;
-            }
-        }
-    }
 }
